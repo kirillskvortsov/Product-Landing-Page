@@ -1,0 +1,240 @@
+html  {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body  {
+  font-family: monospace;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  background-color: #eee;
+  color: #222;
+  margin: 0;
+  scroll-padding-top: 6rem;
+}
+
+.pic {
+  width: 3rem;
+  height: 3rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  background-color: #ddd;
+  z-index: 1;
+}
+
+#nav-title {
+  width: 40%;
+  padding-left: 2%;
+  text-align: left;
+}
+
+#nav-btns {
+  width: 60%;
+  text-align: right;
+}
+
+#title {
+  position: relative;
+  top: 0.5rem;
+  left: 1rem;
+  font-size: 2.5rem;
+  display: inline;
+}
+
+#header-pic {
+  position: relative;
+  top: 1.2rem;
+}
+
+#nav-ul {
+  margin: 0;
+}
+
+.nav-btn {
+  display: inline-block;
+  width: 30%;
+}
+
+.nav-btn a {
+  padding: 1.5rem;
+  display: block;
+  text-align: center;
+}
+
+.nav-btn a:hover {
+  color: white;
+  background-color: black;
+}
+
+main {
+  margin: 2rem auto;
+  margin-top: 3rem;
+  width: 600px;
+}
+
+.block {
+  margin: 1rem auto;
+  display: block;
+}
+
+#email {
+  width: 20rem;
+  height: 2rem;
+  padding-left: 4px;
+}
+
+#submit {
+  width: 15rem;
+  height: 3rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: none;
+  border-radius: .8rem;
+  color: white;
+  background-color: rgba(0,128,128, .8);
+  cursor: pointer;
+}
+
+.info {
+  text-align: left;
+}
+
+.info-header {
+  display: inline;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+.info-img {
+  position: relative;
+  top: .5rem;
+}
+
+#video {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+#price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buy {
+  text-align: center;
+  width: 32%;
+  border: 1.5px solid black;
+  padding-bottom: 2rem;
+}
+
+.buy-ul {
+  margin: 0;
+  padding: 0;
+}
+
+.buy-h3 {
+  margin: 0;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: white;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.buy-btn {
+  margin-top: 2rem;
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: .8rem;
+  color: white;
+  background-color: rgba(0,128,128, .5);
+  cursor: pointer;
+}
+
+footer {
+  text-align: right;
+  padding-right: 2rem;
+  background-color: #ddd;
+}
+
+#footer-info {
+  margin: 0;
+}
+
+.footer-btn {
+  padding-left: 2rem;
+  display: inline-block;
+}
+
+#p-footer {
+  display: block;
+  margin: .5rem;
+}
+
+@media(max-width: 800px) {
+  body {
+    min-width: 600px;
+  }
+  
+  main {
+    width: 80%;
+  }
+  
+  #iframe {
+    width: 448px;
+    height: 252px;
+  }
+  
+  #title {
+    display: none;
+  }
+  
+  .info-img {
+    display: none;
+  }
+  
+  .info-header {
+    display: block;
+    text-align: center;
+    padding-left: 0;
+  }
+  
+  #price {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .buy {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  
+  #nav-title {
+    width: 20%;
+  }
+
+  #nav-btns {
+    width: 80%;
+  }
+}
